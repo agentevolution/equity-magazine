@@ -1,0 +1,97 @@
+/**
+ * Theme Name: Equity Magazine
+ * Author: Agent Evolution
+ * Author URI: http://www.agentevolution.com/
+ * Description: Magazine style theme for Equity
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: equity-magazine
+ * Domain Path: /languages/
+ * Tags: 
+ *
+ * Template: equity
+ *
+ * Notes: Parent theme CSS is imported via functions.php. Add your custom CSS here.
+ */
+
+/* =Header
+------------------ */
+.site-title img {
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 8px;
+}
+header.site-header .site-description {
+	color: #aaa;
+}
+.header-widget-area p {
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 64.063em) {
+	header.site-header {
+		padding: 1.3rem 0;
+	}
+}
+.top-header .agent-social-icons a {
+	padding: 5px 0;
+}
+.top-header-right ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+.top-header-right ul li a {
+	margin: 0 6px;
+	padding: 2px 5px;
+}
+.top-header-right ul li a.button.tiny {
+	padding: .25rem .3rem;
+}
+
+/* =Home page
+------------------ */
+.home-middle {
+	margin: 0 auto;
+	padding: 2rem;
+	background: #fafafa;
+}
+.home-middle h4 {
+	font-size: 32px;
+}
+
+
+/* =Content
+------------------ */
+header .entry-meta,
+footer .entry-meta {
+	padding-bottom: 8px;
+	border-bottom: 1px solid #efefef;
+}
+
+header .entry-meta i {
+	display: inline-block;
+}
+header .entry-meta i.fa-user {
+	display: none;
+}
+
+/* =Footer
+------------------ */
+.footer-widgets-4 {
+
+}
+.footer-widgets {
+	background: #f5f5f5;
+}
+.footer-widgets,
+.footer-widgets a {
+	color: #444;
+}
+.footer-widgets .widget-title,
+.footer-widgets a:hover {
+	color: #999;
+}
+footer.site-footer,
+footer.site-footer p,
+footer.site-footer a {
+	color: #fff;
+}

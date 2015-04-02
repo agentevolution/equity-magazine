@@ -20,6 +20,9 @@ function equity_child_theme_scripts() {
     wp_enqueue_style( 'equity-theme-css', get_template_directory_uri() . '/style.css', false );
 }
 
+//* Add rectangular size image for featured posts/pages
+add_image_size( 'featured-post', '700', '370', true);
+
 //* Register widget areas
 equity_register_widget_area(
 	array(
@@ -67,7 +70,7 @@ function equity_child_home() {
 				</div><!-- end .columns .small-12 -->
 			</div><!-- end .row -->
 		</div><!-- end .home-top -->
-		<div class="home-top">
+		<div class="home-bottom">
 			<div class="row">
 				<div class="columns small-12 large-6 home-bottom-left">
 					<?php equity_widget_area( 'home-bottom-left' ); ?>
@@ -76,14 +79,19 @@ function equity_child_home() {
 					<?php equity_widget_area( 'home-bottom-right' ); ?>
 				</div><!-- end .home-bottom-right .columns .small-12 -->
 			</div><!-- end .row -->
-		</div><!-- end .home-bottom-left -->
+		</div><!-- end .home-bottom -->
 	</div><!-- end .content -->
-	<div class="columns small-4 sidebar">
+	<div class="columns small-4 sidebar-primary">
 		<?php equity_widget_area( 'home-sidebar' ); ?>
 	</div><!-- end .sidebar -->
 
 <?php
 }
+
+// * Home page - default blog. Uncomment to use.
+// function equity_child_home() {
+// 	equity();
+// }
 
 # Theme Customizatons
 require_once get_stylesheet_directory() . '/lib/customizer.php';

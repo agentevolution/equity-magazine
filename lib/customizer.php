@@ -1,8 +1,8 @@
 <?php
-/* Adds Customizer options for IDX Blog
+/* Adds Customizer options for Equity Magazine
  */
 
-class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
+class EQUITY_MAG_Customizer extends EQUITY_Customizer_Base {
 
 	/**
 	 * Register theme specific customization options
@@ -18,7 +18,7 @@ class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
 		$wp_customize->add_section(
 			'colors',
 			array(
-				'title'    => __( 'Custom Colors', 'equity-child'),
+				'title'    => __( 'Custom Colors', 'equity-magazine'),
 				'priority' => 200,
 			)
 		);
@@ -48,7 +48,7 @@ class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
 				$wp_customize,
 				'primary_color',
 				array(
-					'label'       => __( 'Primary Color', 'equity-child' ),
+					'label'       => __( 'Primary Color', 'equity-magazine' ),
 					'description' => 'Used for links, buttons, top bar and footer background.',
 					'section'     => 'colors',
 					'settings'    => 'primary_color',
@@ -63,7 +63,7 @@ class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
 				$wp_customize,
 				'primary_color_hover',
 				array(
-					'label'       => __( 'Primary Hover Color', 'equity-child' ),
+					'label'       => __( 'Primary Hover Color', 'equity-magazine' ),
 					'description' => 'Used for hover states and borders - should be slightly darker (or lighter) than the primary color.',
 					'section'     => 'colors',
 					'settings'    => 'primary_color_hover',
@@ -78,7 +78,7 @@ class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
 				$wp_customize,
 				'primary_color_light',
 				array(
-					'label'       => __( 'Primary Color Light', 'equity-child' ),
+					'label'       => __( 'Primary Color Light', 'equity-magazine' ),
 					'description' => 'Used primarily for header menu borders and labels - should be lighter than the primary but in the same hue.',
 					'section'     => 'colors',
 					'settings'    => 'primary_color_light',
@@ -223,12 +223,12 @@ class IDX_BLOG_Customizer extends EQUITY_Customizer_Base {
 	
 }
 
-add_action( 'init', 'idx_blog_customizer_init' );
+add_action( 'init', 'equity_mag_customizer_init' );
 /**
  * Instantiate EQUITY_Customizer
  * 
  * @since 1.0
  */
-function idx_blog_customizer_init() {
-	new IDX_BLOG_Customizer;
+function equity_mag_customizer_init() {
+	new EQUITY_MAG_Customizer;
 }

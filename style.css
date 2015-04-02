@@ -15,70 +15,71 @@
  * Notes: Parent theme CSS is imported via functions.php. Add your custom CSS here.
  */
 
-/* =Header
------------------- */
-.site-title img {
-	border-bottom: 1px solid #efefef;
-	padding-bottom: 8px;
+/* =Home
+------------------------------------------------------------------------- */
+.home .soliloquy-theme-metro .soliloquy-caption-inside .soliloquy-fc-title,
+.home .soliloquy-theme-metro .soliloquy-caption-inside .soliloquy-fc-title a {
+	font-weight: 500;
 }
-header.site-header .site-description {
-	color: #aaa;
+.home .soliloquy-theme-metro .soliloquy-caption-inside .soliloquy-fc-content p {
+	line-height: 20px;
 }
-.header-widget-area p {
-	margin-bottom: 0;
+.home .soliloquy-theme-metro .soliloquy-caption-inside .soliloquy-fc-content em {
+	font-style: normal;
 }
-@media only screen and (min-width: 64.063em) {
-	header.site-header {
-		padding: 1.3rem 0;
-	}
+.home-top .widget,
+.home-bottom .widget {
+	margin-bottom: 2rem;
 }
-.top-header .agent-social-icons a {
-	padding: 5px 0;
-}
-.top-header-right ul li {
-	list-style-type: none;
-	display: inline-block;
-}
-.top-header-right ul li a {
-	margin: 0 6px;
-	padding: 2px 5px;
-}
-.top-header-right ul li a.button.tiny {
-	padding: .25rem .3rem;
-}
-
-/* =Home page
------------------- */
-.home-middle {
-	margin: 0 auto;
-	padding: 2rem;
-	background: #fafafa;
-}
-.home-middle h4 {
-	font-size: 32px;
-}
-
-
-/* =Content
------------------- */
-header .entry-meta,
-footer .entry-meta {
-	padding-bottom: 8px;
+.home-bottom .featured-post h4.widget-title:first-child {
+	font-size: 1.45rem;
+	font-weight: 500;
 	border-bottom: 1px solid #efefef;
 }
-
-header .entry-meta i {
-	display: inline-block;
+.home-bottom .featured-post h2.entry-title {
+	font-weight: 500;
 }
-header .entry-meta i.fa-user {
-	display: none;
+.home-bottom .featured-post h4.widget-title {
+	font-size: 1.08rem;
+	font-weight: 500;
+}
+.home .featured-post .entry-content p {
+	font-size: 0.88rem;
+}
+.home-bottom .featured-post ul li,
+.home .featured-post p.more-from-category {
+	font-size: 0.8rem;
+}
+
+/* =Widgets
+------------------------------------------------------------------------- */
+.widget.featured-post a img {
+	border: 1px solid #efefef;
+}
+
+/* =Sidebar
+------------------------------------------------------------------------- */
+.sidebar-primary .widget.featured-post article {
+	overflow: hidden;
+	margin-bottom: 0.3rem;
+}
+.sidebar-primary .widget.featured-post a img {
+	width: 70px;
+	height: auto;
+	border: 1px solid #ccc;
+}
+.sidebar-primary .featured-post header {
+	margin: 0;
+}
+.sidebar-primary .featured-post h2.entry-title {
+	font-size: 0.80rem;
+}
+.sidebar-primary .featured-post .entry-content p {
+	font-size: 0.74rem;
 }
 
 /* =Footer
------------------- */
-.footer-widgets-4 {
-
-}
+------------------------------------------------------------------------- */
 .footer-widgets {
 	background: #f5f5f5;
 }

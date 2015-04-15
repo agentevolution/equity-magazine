@@ -91,8 +91,12 @@
 .footer-widgets a:hover {
 	color: #999;
 }
+footer.site-footer {
+	background: #5c5c5c;
+}
 footer.site-footer,
 footer.site-footer p,
-footer.site-footer a {
+footer.site-footer a,
+footer.site-footer i {
 	color: #fff;
 }
